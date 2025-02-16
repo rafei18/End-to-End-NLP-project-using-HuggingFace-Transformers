@@ -20,3 +20,96 @@
 [2025-02-16 08:22:17,919: INFO: common: created directory at: artifacts]
 [2025-02-16 08:22:17,919: INFO: common: created directory at: artifacts/data_transformation]
 [2025-02-16 08:22:26,827: INFO: main: Stage Data Transformation Stage COMPLETED]
+[2025-02-16 08:46:42,206: INFO: config: PyTorch version 2.6.0 available.]
+[2025-02-16 08:57:50,651: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-02-16 08:57:50,659: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-16 08:57:50,661: INFO: common: created directory at: artifacts]
+[2025-02-16 08:57:50,667: INFO: common: created directory at: artifacts/model_trainer]
+[2025-02-16 09:09:28,078: INFO: config: PyTorch version 2.6.0 available.]
+[2025-02-16 09:09:28,410: INFO: main: Stage Data Ingestion Stage initiated]
+[2025-02-16 09:09:28,411: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-02-16 09:09:28,414: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-16 09:09:28,414: INFO: common: created directory at: artifacts]
+[2025-02-16 09:09:28,414: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-02-16 09:09:28,414: INFO: data_ingestion: File already exits]
+[2025-02-16 09:09:28,679: INFO: main: Stage Data Ingestion Stage COMPLETED]
+[2025-02-16 09:09:28,679: INFO: main: Stage Data Transformation Stage initiated]
+[2025-02-16 09:09:28,680: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-02-16 09:09:28,681: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-16 09:09:28,681: INFO: common: created directory at: artifacts]
+[2025-02-16 09:09:28,681: INFO: common: created directory at: artifacts/data_transformation]
+[2025-02-16 09:09:32,203: INFO: main: Stage Data Transformation Stage COMPLETED]
+[2025-02-16 09:09:32,204: INFO: main: Stage Model Trainer Stage initiated]
+[2025-02-16 09:09:32,205: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-02-16 09:09:32,206: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-16 09:09:32,206: INFO: common: created directory at: artifacts]
+[2025-02-16 09:09:32,206: ERROR: main: 'ConfigurationManager' object has no attribute 'params']
+Traceback (most recent call last):
+  File "/Users/tchouar/Desktop/mlops_/nlp_end2end/TextSummarizer/main.py", line 36, in <module>
+    data_ingestion_pipeline.initiate_model_trainer()
+  File "/Users/tchouar/Desktop/mlops_/nlp_end2end/TextSummarizer/src/textSummarizer/pipeline/stage_3_model_trainer_pipeline.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+  File "/Users/tchouar/Desktop/mlops_/nlp_end2end/TextSummarizer/src/textSummarizer/config/configuration.py", line 50, in get_model_trainer_config
+    params=self.params.TrainingArguments
+AttributeError: 'ConfigurationManager' object has no attribute 'params'
+[2025-02-16 09:12:38,118: INFO: config: PyTorch version 2.6.0 available.]
+[2025-02-16 09:12:38,452: INFO: main: Stage Data Ingestion Stage initiated]
+[2025-02-16 09:12:38,453: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-02-16 09:12:38,454: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-16 09:12:38,454: INFO: common: created directory at: artifacts]
+[2025-02-16 09:12:38,454: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-02-16 09:12:38,454: INFO: data_ingestion: File already exits]
+[2025-02-16 09:12:38,598: INFO: main: Stage Data Ingestion Stage COMPLETED]
+[2025-02-16 09:12:38,598: INFO: main: Stage Data Transformation Stage initiated]
+[2025-02-16 09:12:38,600: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-02-16 09:12:38,600: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-16 09:12:38,601: INFO: common: created directory at: artifacts]
+[2025-02-16 09:12:38,601: INFO: common: created directory at: artifacts/data_transformation]
+[2025-02-16 09:12:39,764: INFO: main: Stage Data Transformation Stage COMPLETED]
+[2025-02-16 09:12:39,764: INFO: main: Stage Model Trainer Stage initiated]
+[2025-02-16 09:12:39,766: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-02-16 09:12:39,766: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-16 09:12:39,766: INFO: common: created directory at: artifacts]
+[2025-02-16 09:12:39,766: INFO: common: created directory at: artifacts/model_trainer]
+[2025-02-16 09:21:44,556: INFO: config: PyTorch version 2.6.0 available.]
+[2025-02-16 09:21:45,016: INFO: main: Stage Data Ingestion Stage initiated]
+[2025-02-16 09:21:45,018: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-02-16 09:21:45,019: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-16 09:21:45,019: INFO: common: created directory at: artifacts]
+[2025-02-16 09:21:45,019: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-02-16 09:21:45,019: INFO: data_ingestion: File already exits]
+[2025-02-16 09:21:45,167: INFO: main: Stage Data Ingestion Stage COMPLETED]
+[2025-02-16 09:21:45,167: INFO: main: Stage Data Transformation Stage initiated]
+[2025-02-16 09:21:45,169: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-02-16 09:21:45,169: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-16 09:21:45,170: INFO: common: created directory at: artifacts]
+[2025-02-16 09:21:45,170: INFO: common: created directory at: artifacts/data_transformation]
+[2025-02-16 09:21:46,158: INFO: main: Stage Data Transformation Stage COMPLETED]
+[2025-02-16 09:21:46,158: INFO: main: Stage Model Trainer Stage initiated]
+[2025-02-16 09:21:46,159: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-02-16 09:21:46,160: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-16 09:21:46,160: INFO: common: created directory at: artifacts]
+[2025-02-16 09:21:46,160: INFO: common: created directory at: artifacts/model_trainer]
+[2025-02-16 09:23:17,554: ERROR: main: MPS backend out of memory (MPS allocated: 6.20 GB, other allocations: 2.58 GB, max allowed: 9.07 GB). Tried to allocate 375.40 MB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).]
+Traceback (most recent call last):
+  File "/Users/tchouar/Desktop/mlops_/nlp_end2end/TextSummarizer/main.py", line 36, in <module>
+    data_ingestion_pipeline.initiate_model_trainer()
+  File "/Users/tchouar/Desktop/mlops_/nlp_end2end/TextSummarizer/src/textSummarizer/pipeline/stage_3_model_trainer_pipeline.py", line 12, in initiate_model_trainer
+    model_trainer_config.train()
+  File "/Users/tchouar/Desktop/mlops_/nlp_end2end/TextSummarizer/src/textSummarizer/components/model_trainer.py", line 34, in train
+    trainer.train()
+  File "/Users/tchouar/Desktop/mlops_/nlp_end2end/TextSummarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2171, in train
+    return inner_training_loop(
+  File "/Users/tchouar/Desktop/mlops_/nlp_end2end/TextSummarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2531, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/Users/tchouar/Desktop/mlops_/nlp_end2end/TextSummarizer/venv/lib/python3.10/site-packages/transformers/trainer.py", line 3712, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/Users/tchouar/Desktop/mlops_/nlp_end2end/TextSummarizer/venv/lib/python3.10/site-packages/accelerate/accelerator.py", line 2246, in backward
+    loss.backward(**kwargs)
+  File "/Users/tchouar/Desktop/mlops_/nlp_end2end/TextSummarizer/venv/lib/python3.10/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/Users/tchouar/Desktop/mlops_/nlp_end2end/TextSummarizer/venv/lib/python3.10/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/Users/tchouar/Desktop/mlops_/nlp_end2end/TextSummarizer/venv/lib/python3.10/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: MPS backend out of memory (MPS allocated: 6.20 GB, other allocations: 2.58 GB, max allowed: 9.07 GB). Tried to allocate 375.40 MB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
