@@ -113,3 +113,10 @@ Traceback (most recent call last):
   File "/Users/tchouar/Desktop/mlops_/nlp_end2end/TextSummarizer/venv/lib/python3.10/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
 RuntimeError: MPS backend out of memory (MPS allocated: 6.20 GB, other allocations: 2.58 GB, max allowed: 9.07 GB). Tried to allocate 375.40 MB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+[2025-02-16 11:56:10,320: INFO: config: PyTorch version 2.6.0 available.]
+[2025-02-17 09:27:59,230: INFO: config: PyTorch version 2.6.0 available.]
+[2025-02-17 09:27:59,606: INFO: main: Stage Model Evaluation Stage initiated]
+[2025-02-17 09:27:59,608: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-02-17 09:27:59,609: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-17 09:27:59,609: INFO: common: created directory at: artifacts]
+[2025-02-17 09:27:59,609: INFO: common: created directory at: artifacts/model_evaluation]
