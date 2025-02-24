@@ -1,25 +1,12 @@
-# TextSummarizer USing Huggingface
-
-### Workflows 
-
-1. Config.yaml
-2. Params.yaml
-3. Config entity
-4. Configuration Manager
-5. Update the components- Data Ingestion,Data Transformation, Model Trainer
-6. Create our Pipeline-- Training Pipeline,PRediction Pipeline
-7. Front end-- Api's, Training APi's, Batch Prtediction API's
-
-### Life cycle of GEN AI project
-<p align="center">
-  <img src="img/genailifecycle.png" alt="ETL">
-</p>
-
 
 
 # 📌 NLP End-to-End Project - Pegasus for Text Summarization  
 
 Ce projet est une implémentation complète d’un pipeline NLP basé sur le modèle **Pegasus (CNN/DailyMail)** pour la génération automatique de résumés de texte. Il comprend la collecte et la transformation des données, l'entraînement du modèle, ainsi que la mise à disposition d'une API pour la prédiction.  
+
+<p align="center">
+  <img src="img/nlp.png" alt="ETL">
+</p>
 
 ## 📂 Structure du projet  
 
@@ -80,3 +67,14 @@ Le modèle est évalué avec le **ROUGE score**, une métrique largement utilis�
 - `FastAPI` → Création de l’API  
 - `nimpy, Pandas` → Manipulation des données  
 - `ROUGE Score` → Évaluation des résumés  
+
+
+### Workflows 
+
+1. Config.yaml
+2. Params.yaml
+3. Config entity
+4. Configuration Manager
+5. Update the components- Data Ingestion,Data Transformation, Model Trainer
+6. Create our Pipeline-- Training Pipeline,PRediction Pipeline
+7. Front end-- Api's, Training APi's, Batch Prtediction API's
